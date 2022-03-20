@@ -1,0 +1,14 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  odoo:
+    build: .
+    ports:
+      - "5005:5005"
+    image: activation:2.0
+    restart: always
+    # volumes: 
+    #   - /mnt/d/odoo_code:/app/data
+#       - server-action:/app
+
+# volumes:
+#   server-action:
